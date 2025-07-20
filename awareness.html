@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Security Breach Detected</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      color: #00ff00;
+      font-family: 'Share Tech Mono', monospace;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .container {
+      max-width: 700px;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.85);
+      border: 2px solid #00ff00;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #00ff00;
+      position: relative;
+    }
+
+    .container img.hacker {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 15px;
+      letter-spacing: 3px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+
+    .code {
+      background: #002200;
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 14px;
+      text-align: left;
+      max-height: 150px;
+      overflow-y: auto;
+      margin-top: 20px;
+      user-select: all;
+    }
+
+    /* Matrix rain animation */
+    @keyframes rain {
+      0% {transform: translateY(-100%);}
+      100% {transform: translateY(100%);}
+    }
+
+    .matrix {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 0;
+      color: #00ff00;
+      font-family: monospace;
+      font-size: 16px;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: rain 10s linear infinite;
+      user-select: none;
+      opacity: 0.15;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="matrix">
+    01 10 11 00 10 01 11 00 10 01 11 00 01 11 10 00 01 10 11 10 00 01 11 10 11 01 00 10 11 01 00 10 11 01 00
+  </div>
+
+  <div class="container">
+    <img class="hacker" src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Hacker Icon" />
+    <h1>SECURITY BREACH DETECTED</h1>
+    <p><strong>Oops!</strong> You’ve been hacked <em>by Renad</em>! 😈</p>
+    <p>Don’t worry — it’s just a friendly cybersecurity awareness prank.</p>
+    <p>Remember: The only safe password is the one you <strong>never</strong> share — especially with hackers named Renad.</p>
+
+    <div class="code">
+      <pre>
+-- Captured Data --
+Username: ****
+Password: ****
+
+-- Joke of the day --
+If you’re not careful, the hacker might be sipping your coffee while reading your messages! ☕💻😅
+      </pre>
+    </div>
+  </div>
+
+</body>
+</html>
